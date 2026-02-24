@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(composer test:lint:*)",
+      "Bash(php artisan:*)",
+      "Bash(npm run lint:*)",
+      "mcp__laravel-boost__database-query"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "laravel-boost"
+  ]
+}
