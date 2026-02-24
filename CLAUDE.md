@@ -2,6 +2,40 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Important Rules
+
+* Date should be included as a prefix for .claude and .agents file.
+```rule
+Every agent output to a file within .agents or .claude (plan, report) MUST be prefixed using format YYYYMMDDDD
+
+Examples:
+reports/donation-boxes-report.md -> reports/20260224-donation-boxes-report.md
+plans/completed/donation-boxes.plan -> plans/completed/20260224-donation-boxes.plan
+```
+
+* When talking about plans or reports, they should be addressed as "the plan" or "the report" without including the prefix, however file name can be included.
+```rule
+When AI has generated a plan and refers to with the plan title and the prefix in between parenthesis.
+
+Example:
+Claude: I have generated the plan for the donation boxes feature (20260224-donation-boxes.plan).
+Claude: I have generated the report for the donation boxes feature (20260224-donation-boxes-report.md).
+```
+
+* Don't rely on 'common sense' when instructions are not clear
+```rule
+Example:
+Claude should ask clarifying questions if any instruction is ambiguous or missing information. 
+For example, if a user says "write a test for the User model", Claude should ask "what specific behavior of the User model should I test?"
+
+When a user gives an instruction that is missing information, Claude should ask for clarification before proceeding.
+User: Create a donation box feature.
+Claude: What should the donation box do? What fields should it have? How should it be accessed? Which currencies are accepted?
+```
+
+
+
+
 ## Commands
 
 ```bash
