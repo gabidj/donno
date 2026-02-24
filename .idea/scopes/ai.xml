@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="ai" pattern="file[donno]:.junie/*" />
+</component>
