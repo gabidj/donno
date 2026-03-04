@@ -9,7 +9,10 @@
     },
     "dbmcp": {
       "type": "http",
-      "url": "https://donno.test/mcp/donno"
+      "url": "https://donno.test/mcp/donno",
+      "headers": {
+        "Authorization": "Bearer 4|tPXLoOuaskVTUstH0yo5mppx6ZR248IPAqSeVxlz05979336"
+      }
     },
     "weathermcp": {
       "type": "http",

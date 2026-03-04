@@ -32,4 +32,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('settings/mcp-setup', [McpSetupController::class, 'show'])
         ->name('mcp-setup.show');
+
+    Route::post('settings/mcp-setup/tokens', [McpSetupController::class, 'store'])
+        ->name('mcp-setup.store');
+    Route::delete('settings/mcp-setup/tokens/{token}', [McpSetupController::class, 'destroy'])
+        ->name('mcp-setup.destroy');
 });
