@@ -1,11 +1,19 @@
 {
-    "mcpServers": {
-        "laravel-boost": {
-            "command": "php",
-            "args": [
-                "artisan",
-                "boost:mcp"
-            ]
-        }
+  "mcpServers": {
+    "laravel-boost": {
+      "command": "php",
+      "args": [
+        "artisan",
+        "boost:mcp"
+      ]
+    },
+    "dbmcp": {
+      "type": "http",
+      "url": "https://donno.test/mcp/donno"
+    },
+    "weathermcp": {
+      "type": "http",
+      "url": "http://donno.test/mcp/weather"
     }
+  }
 }

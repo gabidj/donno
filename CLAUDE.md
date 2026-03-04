@@ -33,6 +33,7 @@ User: Create a donation box feature.
 Claude: What should the donation box do? What fields should it have? How should it be accessed? Which currencies are accepted?
 ```
 
+* Always leave exactly empty line at the end of each code file you work on.
 
 
 
